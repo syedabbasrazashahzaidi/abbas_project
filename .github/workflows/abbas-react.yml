@@ -27,14 +27,10 @@ jobs:
         with:
           node-version: 14
       - name: GitHub Action for Yarn
-          uses: sergioramos/yarn-actions@v2
-          with:
-    # output the version number
-            cmd: Install
 
-    #     uses: Borales/actions-yarn@v2.1.22.10
-    #     with:
-    #       cmd: Install
+        uses: Borales/actions-yarn@v2
+         with:
+          cmd: Install
       
       - name: Installing surge
         run: npm install -g surge
