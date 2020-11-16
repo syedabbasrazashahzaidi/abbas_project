@@ -27,11 +27,11 @@ jobs:
         with:
           node-version: 14
       - name: GitHub Action for Yarn
-          uses: sergioramos/yarn-actions@v6
+          uses: sergioramos/yarn-actions@v2
           with:
     # output the version number
-            version: 1.22.10
-            
+            cmd: Install
+
     #     uses: Borales/actions-yarn@v2.1.22.10
     #     with:
     #       cmd: Install
