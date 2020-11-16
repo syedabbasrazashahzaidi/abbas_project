@@ -27,7 +27,11 @@ jobs:
         with:
           node-version: 14
       - name: GitHub Action for Yarn
-          uses: comchangs/action-yarn@v0.1-beta
+          uses: sergioramos/yarn-actions@v6
+          with:
+    # output the version number
+            version: 1.22.10
+            
     #     uses: Borales/actions-yarn@v2.1.22.10
     #     with:
     #       cmd: Install
