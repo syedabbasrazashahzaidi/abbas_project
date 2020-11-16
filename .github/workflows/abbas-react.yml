@@ -30,10 +30,8 @@ jobs:
         run: yarn
       #   uses: borales/actions-yarn@v2.0.0 # `yarn install`
       #   with:
-      #     cmd: Install
-      - name: Build React App
-        run: yarn build                                  
+      #     cmd: Install                                 
       - name: Installing surge
         run: npm install -g surge
       - name: Deploy on surge
-        run: surge ./build abbas2.surge.sh --token ${{secrets.SURGETOKEN_AB2}}
+        run: surge ./ build http://abbas2.surge.sh/ --token ${{secrets.SURGETOKEN_AB2}}
