@@ -27,8 +27,13 @@ jobs:
         with:
           node-version: 14
       - name: Github action for yarn 
-        uses: Borales/actions-yarn@v2.1.0
+<<<<<<< HEAD
+        uses: Borales/actions-yarn@v2.0.0
           with:
+=======
+        uses: Borales/actions-yarn@v2.1.0
+        with:
+>>>>>>> f5852760a01dfeae1368c6aaf66ead8ddb06f49f
             cmd: Install
       - name: Creating build
         run: yarn build
