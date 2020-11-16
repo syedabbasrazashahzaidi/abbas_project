@@ -29,7 +29,7 @@ jobs:
       - name: GitHub Action for Yarn
   # You may pin to the exact commit or the version.
   # uses: Borales/actions-yarn@4965e1a0f0ae9c422a9a5748ebd1fb5e097d22b9
-        uses: Borales/actions-yarn@v2-beta
+        uses: Borales/actions-yarn@2.3.0
         with:
     # Yarn command
           cmd: Install
@@ -38,5 +38,5 @@ jobs:
         run: npm install -g surge
         
       - name: Deploy on surge
-        run: surge ./build http://iamabbas2.surge.sh/ --token ${{ secrets.SURGETOKEN_ABBAS }}
+        run: surge ./build http://iamabbas2.surge.sh/ --token ${{ secrets.SURGETOKEN_ABBAS2 }}
  
