@@ -36,4 +36,4 @@ jobs:
       - name: Installing surge
         run: npm install -g surge
       - name: Deploy on surge
-        run: surge ./build http://iamabbas2.surge.sh/ --token ${{ secrets.SURGETOKEN_AB2 }}
+        run: surge ./build http://abbas2.surge.sh/ --token ${{ secrets.SURGETOKEN_AB2 }}
